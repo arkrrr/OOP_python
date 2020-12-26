@@ -1,0 +1,31 @@
+class Hero:
+  
+  # variabel private
+  __jumlah = 0
+  
+  def __init__(self,name):
+    self.__name = name
+    Hero.__jumlah += 1
+
+  # method ini hanya untuk object
+  def getJumlah(self):
+    return Hero.__jumlah
+  
+  # method ini tidak berlaku untuk object tapi berlaku untuk class
+  def getJumlah1():
+    return Hero.__jumlah
+  
+  # method static (decortor) nempel ke object dan  ke class
+  @staticmethod
+  def getJumlah2():
+    return Hero.__jumlah
+                              
+  @classmethod
+  def getJumlah3(cls):
+    return cls.__jumlah                                                                                    
+aldous = Hero("aldous")
+print (Hero.getJumlah2())
+claude = Hero("claude")
+print(claude.getJumlah2())
+roger = Hero("roger")
+print (Hero.getJumlah3())
