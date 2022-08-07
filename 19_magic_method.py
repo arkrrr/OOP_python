@@ -21,6 +21,7 @@ class Mangga:
 belanja1 = Mangga("arumanis",10)
 belanja2 = Mangga("mana lagi",5)
 
+print ("hasil")
 print (repr(belanja1))
 print (belanja2)
 print (belanja1 + belanja2)

@@ -15,6 +15,6 @@ class Hero:
 lina = Hero("lina",100)
 lina.protected = "testing"
 
-print ("hasil")
+print ("hasil dictionary")
 print (Hero.__dict__)
 print (Hero.__PrivateJumlah)
