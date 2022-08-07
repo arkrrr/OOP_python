@@ -14,5 +14,7 @@ class Hero:
     self._protected = "protected"    
 lina = Hero("lina",100)
 lina.protected = "testing"
+
+print ("hasil")
 print (Hero.__dict__)
 print (Hero.__PrivateJumlah)
